@@ -9,7 +9,12 @@ body
   box-sizing: border-box;
 }
 
+#iconoBoton{
 
+    background-color: #8B0000;
+    border: none;
+    
+}
 .datoNombre{
 
     color: #7FFF00;
@@ -289,6 +294,11 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+body.dark-mode {
+  background-color: #262626;
+
 }
 
 

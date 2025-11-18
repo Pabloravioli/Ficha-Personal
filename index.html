@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="darkmode.js">
     <link rel="stylesheet" href="estilo.css">
     <title>Ficha Personal</title>
 </head>
 <body>
     <header>
         <h1>Ficha Personal</h1>
+        <button id="iconoBoton">
         <img src="iconos/moon (2).png" alt="Cambiar a modo oscuro">
+        </button>
         
     </header>
     <main>
@@ -64,9 +67,9 @@
 
             <div class="galeriaUrbana">
                 <img src="Imagenes/WhatsApp Image 2025-11-04 at 20.33.15.jpeg" alt="Logo de galeria Urbana">
-                <a href="">Galeria Urbana</a>
-                <a href="">Repositorio</a>
-                <a href="">Documentacion</a>
+                <a href="https://galeriaurbana.me/" target="_blank">Galeria Urbana</a>
+                <a href="https://github.com/nicopenaloza/grupo-8-web-design-tpo.git" target="_blank">Repositorio</a>
+                <a href="https://www.figma.com/design/0eGOzR9P9PxxV4cr0VAkJG/Galeria-Urbana?node-id=1-2&p=f&t=QjRkc4N16DGDMqTu-0" target="_blank">Documentacion</a>
 
             </div>
         </div>
@@ -76,6 +79,14 @@
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <script>
+        const btn = document.getElementById("iconoBoton");
+btn.addEventListener("click", ()=> {
+
+    document.body.classList.toggle("dark-mode")
+})
+    </script>
     
 </body>
 </html>
